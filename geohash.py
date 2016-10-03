@@ -1,14 +1,9 @@
-# define some variables:
-
 # characters for encoding
 BASE_32 = "0123456789bcdefghjkmnpqrstuvwxyz"
 
-# ranges - for finding the bin a coordinate belongs to
-lat_range = [-90, 90]
-lon_range = [-180, 180]
-
-
 def geohash(lat, lon):
+    lat_range = [-90, 90]
+    lon_range = [-180, 180]
     # find column for lat and 'label' it with binary
 
     # find row for lon and 'label' it with binary
