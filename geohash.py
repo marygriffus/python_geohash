@@ -33,13 +33,13 @@ def geohash(lat, lon):
     lat_range = [-90, 90]
     lon_range = [-180, 180]
 
-    # find row for lon and 'label' it with binary
+    # find column for lon and 'label' it with binary
     lon_bits = divide_range(lon, lon_range)
 
-    # find column for lon and 'label' it with binary
+    # find row for lat and 'label' it with binary
     lat_bits = divide_range(lat, lat_range)
 
-    # interleave (alternate) the lat and lon bits
+    # interleave (alternate) the lon and lat bits
     lat_lon_bin = interleave(lon_bits, lat_bits)
 
     # encode the resulting number in base 32 (easier to use than a big long binary string!)
