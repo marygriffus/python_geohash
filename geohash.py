@@ -13,3 +13,7 @@ def geohash(lat, lon):
     # encode the resulting number in base 32 (easier to use than a big long binary string!)
 
     return None
+
+if __name__ == '__main__':
+    hash1 = geohash(52.61911, -10.40744)
+    print(hash1)
