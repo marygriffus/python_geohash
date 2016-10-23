@@ -10,7 +10,6 @@ def divide_range(value, bounded_range):
         else:
             label = label << 1
             bounded_range[1] = bisector
-    print(label)
     return label
 
 def interleave(lon_bits, lat_bits):
