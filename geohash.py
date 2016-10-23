@@ -47,5 +47,6 @@ def geohash(lat, lon):
 
     return final
 
-hash1 = geohash(52.61911, -10.40744)
-print(hash1)
+if __name__ == '__main__':
+    hash1 = geohash(52.61911, -10.40744)
+    print(hash1)
